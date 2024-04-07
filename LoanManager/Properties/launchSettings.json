@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "LoanManager (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "LoanManager (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

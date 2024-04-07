@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="LoanManager.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:LoanManager.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel HorizontalAlignment="Center">
+        <TextBlock Text="Abrir prestamo" HorizontalAlignment="Center" Margin="0 20 0 0"/>
+        <ComboBox PlaceholderText="Seleccionar" Width="200" Header="Selecionar cliente:" Margin="0 40 0 0">
+            <ComboBoxItem Content="Marco"/>
+            <ComboBoxItem Content="Humberto"/>
+            <ComboBoxItem Content="Winifer"/>
+            <ComboBoxItem Content="Mory"/>
+        </ComboBox>
+
+        <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
+            <ComboBox PlaceholderText="Seleccionar" Width="200" Header="Tipo de prestamo:" Margin="0 0 20 0">
+                <ComboBoxItem Content="San"/>
+                <ComboBoxItem Content="Redito"/>
+                <ComboBoxItem Content="Renta"/>
+            </ComboBox>
+
+            <NumberBox Header="Monto" PlaceholderText="0" Width="140"/>
+        </StackPanel>
+
+
+        <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
+            <CalendarDatePicker PlaceholderText="Pick a date" Header="Fecha del prestamo:" Margin="0 0 20 0"/>
+            <CalendarDatePicker PlaceholderText="Pick a date" Header="Fecha de inicio:" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
+            <ComboBox PlaceholderText="Seleccionar" Width="200" Header="Retorno de pagos:" >
+                <ComboBoxItem Content="Diario"/>
+                <ComboBoxItem Content="Semanal"/>
+                <ComboBoxItem Content="Mensual"/>
+
+            </ComboBox>
+            <NumberBox Header="Duración" Width="100" Margin="10 0 10 0"/>
+            <NumberBox Header="Monto a pagar" PlaceholderText="0" Width="100"/>
+        </StackPanel>
+
+        <StackPanel  Margin="0 20 0 0" Orientation="Horizontal">
+            <Button Content="Calcular"  Margin="0 0 20 0"/>
+            <Button Content="Guargar"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Margin="0 20 0 0">
+            <NumberBox Header="Total de pagos" PlaceholderText="0" Width="100"/>
+            <NumberBox Header="Total de retorno" Width="100"  Margin="10 0 10 0"/>
+            <NumberBox Header="Ganacias" PlaceholderText="0" Width="100"/>
+        </StackPanel>
+
+    </StackPanel>
+</Page>
